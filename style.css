@@ -19,9 +19,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -31,6 +32,10 @@ main {
   text-align: center;
 
   color: var(--grey);
+}
+
+.container ul {
+  margin-bottom: 1rem;
 }
 
 .container li:hover {
@@ -58,11 +63,7 @@ main {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
-.footer img {
-  margin-bottom: 0.75rem;
-}
-
-.footer p {
+.logo-dowhile p {
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
