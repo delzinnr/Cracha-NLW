@@ -4,7 +4,8 @@
 
 html,
 body {
-  --black: hsl(240, 6%, 13%);
+  --black: hsl(0, 0%, 0%);
+  --blackgrey: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
   --degrade: rgba(255, 0, 142, 1);
 
@@ -40,6 +41,10 @@ main {
 
 .container li:hover {
   background: var(--degrade);
+}
+
+.banner {
+  display: none;
 }
 
 .avatar {
@@ -93,7 +98,7 @@ p {
 }
 
 ul {
-  margin: 4rem;
+  margin: 3rem;
 
   list-style: none;
   padding: 0;
@@ -102,4 +107,81 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 960px) {
+  main {
+    background: url(images/Desktop.png) no-repeat center/cover;
+    background-color: var(--black);
+  }
+
+  .container {
+    background-color: var(--blackgrey);
+    background: url(images/cardmask.png) no-repeat center;
+    min-width: 350px;
+  }
+
+  .banner {
+    display: grid;
+    position: absolute;
+    top: 0;
+    margin-top: auto;
+    margin-left: 9rem;
+    z-index: 1;
+  }
+
+  .banner img#banner {
+    position: relative;
+    z-index: 10;
+  }
+
+  .banner img#break {
+    position: relative;
+    z-index: 1;
+    top: -2px;
+  }
+
+  .avatar {
+    margin-top: 8.75rem;
+    position: relative;
+  }
+
+  .avatar span {
+    margin-top: 65px;
+  }
+
+  .logo-dowhile {
+    display: flex;
+  }
+
+  .logo-dowhile > img {
+    max-width: 4rem;
+    margin-left: 3rem;
+  }
+
+  .logo-dowhile > p {
+    font-size: 15px;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  h1#userName {
+    margin-top: 1rem;
+  }
+
+  img#userImage {
+    margin-top: 4.1rem;
+  }
+
+  p#userBio {
+    margin-top: 1.2rem;
+  }
+
+  img#break {
+    width: 80px;
+    height: 8px;
+    margin-left: -8px;
+  }
 }
