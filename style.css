@@ -125,8 +125,12 @@ ul {
     display: grid;
     position: absolute;
     top: 0;
-    margin-top: auto;
-    margin-left: 9rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 3.9rem;
+    margin: auto;
+    margin-bottom: 685px;
     z-index: 1;
   }
 
@@ -137,8 +141,8 @@ ul {
 
   .banner img#break {
     position: relative;
-    z-index: 1;
-    top: -2px;
+    z-index: 0;
+    top: -3px;
   }
 
   .avatar {
@@ -156,12 +160,14 @@ ul {
 
   .logo-dowhile > img {
     max-width: 4rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 
   .logo-dowhile > p {
     font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    margin-right: 0.75rem;
   }
 
   ul {
@@ -177,7 +183,9 @@ ul {
   }
 
   p#userBio {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   img#break {
